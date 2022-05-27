@@ -1,0 +1,24 @@
+<div class="divTitle">
+    <h4>Coleções</h4>
+    <button type="button" class="btnAudaces" routerLink="../colecoes/">Criar Coleção</button>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ColecaoID</th>
+            <th>Nome da Coleção</th>
+            <th>Estação e Lançamento</th>
+            <th>Responsável</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr *ngFor="let colecao of colecoes$ | async" [routerLink]="'../colecoes/' + colecao.id">
+            <td class="tableId">{{colecao.id}}</td>
+            <td>{{colecao.nome}}</td>
+            <td>{{colecao.estacao}} {{colecao.ano}}</td>
+            <td>{{colecao.responsavel}}</td>
+        </tr>
+    </tbody>
+</table>

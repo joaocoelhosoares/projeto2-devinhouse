@@ -1,0 +1,30 @@
+<div class="background">
+    <div class="containerLogin">
+        <img src="../../../assets/logo.png" alt="logo Audaces">
+
+        <form [formGroup]="form" class="border">
+            <h4>Sign In</h4>
+            <p class="credentials">Insira suas credenciais para acessar sua conta</p>
+            <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Informe seu e-mail"
+                    formControlName="email" required>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" id="password" placeholder="Informe sua senha"
+                    formControlName="password" required>
+            </div>
+            <button type="submit" class="btnAudaces" (click)="onSubmit()">Entrar</button>
+        </form>
+
+        <div class="resetPassword">
+            <p>Esqueceu sua senha? <a routerLink="/redefinirsenha">Redefinir senha</a></p>
+        </div>
+
+        <div class="alert alert-danger" *ngIf="formInvalid">
+            <div>
+                Dados incorretos! Favor informá-los novamente.
+            </div>
+            <button type="button" class="btnClose" (click)="formInvalid = !formInvalid">X</button>
+        </div>
+    </div>
+</div>

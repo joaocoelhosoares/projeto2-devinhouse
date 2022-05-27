@@ -1,0 +1,25 @@
+<div class="background">
+    <div class="containerLogin">
+        <img src="../../../assets/logo.png" alt="logo Audaces">
+
+        <form [formGroup]="form" class="border">
+            <div class="divTitle">
+                <a routerLink="/login"> ← </a>
+                <h4>Redefinir Senha</h4>
+            </div>
+            <p>Digite o e-mail associado à sua conta e enviaremos instruções para redefinir sua senha</p>
+            <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Informe seu e-mail"
+                    formControlName="email" required>
+            </div>
+            <button type="submit" class="btnAudaces" (click)="onSubmit()">Enviar Recuperação</button>
+        </form>
+
+        <div class="alert alert-danger" *ngIf="formInvalid">
+            <div>
+                E-mail inválido. Favor digite novemente seu e-mail.
+            </div>
+            <button type="button" class="btnClose" (click)="formInvalid = !formInvalid">X</button>
+        </div>
+    </div>
+</div>

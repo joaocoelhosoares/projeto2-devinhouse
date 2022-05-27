@@ -1,0 +1,43 @@
+.divTitle {
+    margin: 75px 0 90px 10px;
+    display: flex;
+    justify-content: space-between;
+
+    h4 {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        color: #2C2C2C;
+    }
+
+    .btnAudaces {
+        margin-right: 50px;
+    }
+}
+
+table {
+    text-align: center;
+
+    th {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #2B2C33;
+        border-top: 0;
+    }
+
+    tbody {
+        color: #9395A3;
+        line-height: 35px;
+
+        tr:hover {
+            background-color: #EBF0FA;
+            cursor: pointer;
+        }
+
+        .tableId {
+            font-weight: 600;
+            color: #2B2C33;
+        }
+    }
+}

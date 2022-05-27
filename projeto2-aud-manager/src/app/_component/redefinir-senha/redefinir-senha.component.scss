@@ -1,0 +1,80 @@
+.background {
+    align-items: center;
+    text-align: center;
+    display: flex;
+
+    img,
+    .resetPassword {
+        margin: 40px;
+    }
+
+    .containerLogin {
+        margin: 0 auto;
+
+        form {
+            width: 480px;
+            height: 407px;
+            background-color: #fff;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            .divTitle {
+                display: flex;
+                align-items: center;
+                margin-top: 53px;
+
+                a {
+                    text-decoration: none;
+                    right: 100px;
+                    bottom: 15px;
+                    font-size: 25pt;
+                    font-weight: 900;
+                    text-align: left;
+                    align-content: left;
+                    position: relative;
+                }
+            }
+
+            p {
+                color: #B4B6C1;
+                font-style: normal;
+                font-weight: 400;
+                width: 352px;
+                font-size: 16px;
+                line-height: 19px;
+                margin-bottom: 50px;
+            }
+
+            input {
+                width: 352px;
+            }
+
+            .btnAudaces {
+                width: 352px;
+                margin-top: 33px;
+            }
+        }
+    }
+
+    .alert-danger {
+        width: 480px;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        margin-top: 5%;
+    }
+
+    .btnClose {
+        position: relative;
+        left: 30px;
+        font-weight: 600;
+        font-size: 16pt;
+        align-content: left;
+        background: none;
+        border: none;
+        color: rgb(179, 80, 80);
+    }
+}

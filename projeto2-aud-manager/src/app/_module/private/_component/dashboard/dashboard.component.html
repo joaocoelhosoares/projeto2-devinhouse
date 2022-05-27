@@ -1,0 +1,42 @@
+<div class="divTitle">
+    <h4>Bem vindo, Usuário</h4>
+    <p>Acompanhe a visão geral de suas coleções</p>
+</div>
+
+<div class="row justify-content-around">
+    <div class="cardDashboard">
+        <p>Coleções</p>
+        <div class="valueDashboard"> {{(colecoes$| async)?.length}} </div>
+    </div>
+    <div class="cardDashboard">
+        <p>Modelos</p>
+        <div class="valueDashboard"> {{(modelos$| async)?.length}} </div>
+    </div>
+    <div class="cardDashboard">
+        <p>Orçamento Médio por Coleção</p>
+        <div class="valueDashboard"> {{(colecoesMean | currency:'BRL')}} </div>
+    </div>
+</div>
+
+<div class="divTitleOrcamentos">
+    <h4>Maiores Orçamentos</h4>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ColecaoID</th>
+            <th>Nome da Coleção</th>
+            <th>Orçamento</th>
+            <th>Responsável</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let colecao of colecoesList">
+            <td class="tableId">{{colecao.id}}</td>
+            <td>{{colecao.nome}}</td>
+            <td>{{colecao.orcamento | currency:'BRL'}}</td>
+            <td>{{colecao.responsavel}}</td>
+        </tr>
+    </tbody>
+</table>

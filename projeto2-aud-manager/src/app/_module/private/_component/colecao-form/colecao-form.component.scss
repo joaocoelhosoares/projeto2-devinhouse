@@ -1,0 +1,59 @@
+.divTitle {
+    margin: 45px 0 40px 10px;
+
+    h4 {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+    }
+}
+
+.formColection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .divColumn {
+        width: 90%;
+        margin-top: 40px;
+        align-items: center;
+
+    }
+}
+
+.imgColection {
+    margin-top: 4%;
+}
+
+.divButtons {
+    display: flex;
+    position: relative;
+    top: 6%;
+    float: right;
+    margin-right: 10%;
+
+    .btnAudacesGray {
+        margin: 0 45px;
+    }
+
+    .alert-danger {
+        width: 410px;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        font-size: 11pt;
+        height: 50px;
+
+        .btnClose {
+            position: relative;
+            left: 20px;
+            font-weight: 600;
+            font-size: 16pt;
+            align-content: left;
+            background: none;
+            border: none;
+            color: rgb(179, 80, 80);
+        }
+    }
+}

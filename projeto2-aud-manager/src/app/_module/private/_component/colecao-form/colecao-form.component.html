@@ -1,0 +1,54 @@
+<div class="divTitle">
+    <h4 *ngIf="form.value.id">Editar Coleção</h4>
+    <h4 *ngIf="!form.value.id">Criar Coleção</h4>
+</div>
+
+<form [formGroup]="form" class="formColection">
+    <div class="row divColumn">
+        <div class="col divItem">
+            <input type="text" class="form-control" id="nome" placeholder="Nome da Coleção" formControlName="nome"
+                required>
+        </div>
+        <div class="col divItem">
+            <input type="text" class="form-control" id="responsavel" placeholder="Responsável pela Coleção"
+                formControlName="responsavel" required>
+        </div>
+    </div>
+
+    <div class="row divColumn">
+        <div class="col divItem">
+            <input type="text" class="form-control" id="estacao" placeholder="Para qual estação?"
+                formControlName="estacao" required>
+        </div>
+        <div class="col divItem">
+            <input type="text" class="form-control" id="marca" placeholder="Para qual marca você está criando?"
+                formControlName="marca" required>
+        </div>
+    </div>
+
+    <div class="row divColumn">
+        <div class="col divItem">
+            <input type="number" class="form-control" id="orcamento" placeholder="Qual é o orçamento desta coleção?"
+                formControlName="orcamento" step="0.01" required>
+        </div>
+        <div class="col divItem">
+            <input type="number" class="form-control" id="ano" placeholder="Ano de lançamento" formControlName="ano"
+                required>
+        </div>
+    </div>
+</form>
+
+<div class="imgColection d-flex justify-content-center">
+    <img src="../../../assets/colection.png">
+</div>
+
+<div class="divButtons">
+    <div class="alert alert-danger" *ngIf="formInvalid">
+        <div>Dados incorretos! Favor informá-los novamente.</div>
+        <button type="button" class="btnClose" (click)="formInvalid = !formInvalid">X</button>
+    </div>
+
+    <button type="reset" class="btnAudacesGray" (click)="onCancel()">Cancelar</button>
+
+    <button type="submit" class="btnAudaces" (click)="onSubmit()">Salvar</button>
+</div>

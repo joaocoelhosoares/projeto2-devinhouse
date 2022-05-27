@@ -1,0 +1,23 @@
+<div class="divTitle">
+    <h4>Modelos</h4>
+    <button type="button" class="btnAudaces" routerLink='../modelos'>Criar Modelo</button>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ModeloID</th>
+            <th>Nome do Modelo</th>
+            <th>Coleção</th>
+            <th>Responsável</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let modelo of modelos$ | async" [routerLink]="'../modelos/' + modelo.id">
+            <td class="tableId">{{modelo.id}}</td>
+            <td>{{modelo.nome}}</td>
+            <td>{{modelo.colecao}}</td>
+            <td>{{modelo.responsavel}}</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,70 @@
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 220px;
+    background: #FEFEFE;
+    border-right: 2px solid #EBEBEB;
+    line-height: 50px;
+    min-height: 98vh;
+    padding-left: 10px;
+
+    .selected {
+        color: #5874DF;
+        background: #EBF0FE;
+        border-radius: 6px;
+    }
+
+    #audacesManager {
+        height: 100px;
+        color: #374557;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 50px;
+
+        img {
+            width: 64px;
+            height: 56px;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 14px;
+        }
+    }
+
+    .divMenu {
+        padding-left: 10px;
+    }
+
+    .menuItem {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        text-decoration: none;
+        line-height: 34px;
+        display: flex;
+        color: #6A7090;
+        padding-left: 25px;
+    }
+
+    span {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+        align-items: center;
+        padding-left: 15px;
+        color: #B4B6C1;
+    }
+
+    .logout {
+        cursor: pointer;
+        padding-bottom: 20%;
+        padding-left: 25px;
+        font-size: 13px;
+    }
+
+}

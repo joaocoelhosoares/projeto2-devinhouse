@@ -1,0 +1,24 @@
+<div id="menu">
+    <div id="audacesManager">
+        <img src="../../../assets/isa.png" alt="imagem do logo Isa">
+        <p>AudacesManager</p>
+    </div>
+    <div class="divMenu">
+        <p>
+            <a class="menuItem" routerLink="dashboard" routerLinkActive="selected">Dashboard</a>
+        </p>
+
+        <p> <span>CADASTROS</span>
+            <a class="menuItem" routerLink="listacolecoes" routerLinkActive="selected">Coleções</a>
+            <a class="menuItem" routerLink="listamodelos" routerLinkActive="selected">Modelos</a>
+        </p>
+
+        <p> <span>SUPORTE</span>
+            <a class="menuItem">Obter Ajuda</a>
+            <a class="menuItem">Enviar Comentários</a>
+        </p>
+
+    </div>
+    <p class="d-flex align-items-end"><span class="logout" (click)="onLogout()">Logout</span></p>
+
+</div>

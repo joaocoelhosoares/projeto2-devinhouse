@@ -1,0 +1,132 @@
+{
+  "colecao": [
+    {
+      "id": 1,
+      "nome": "Coleção 1",
+      "responsavel": "Yan",
+      "estacao": "Inverno",
+      "marca": "Audaces",
+      "ano": 2023,
+      "orcamento": 5000
+    },
+    {
+      "id": 2,
+      "nome": "Coleção 2",
+      "responsavel": "Fernando",
+      "estacao": "Verão",
+      "marca": "Audaces",
+      "ano": 2023,
+      "orcamento": 4500
+    },
+    {
+      "id": 3,
+      "nome": "Coleção 3",
+      "responsavel": "Pamylla",
+      "estacao": "Inverno",
+      "marca": "Audaces",
+      "ano": 2022,
+      "orcamento": 4000
+    },
+    {
+      "id": 4,
+      "nome": "Coleção 4",
+      "responsavel": "Michel",
+      "estacao": "Outono",
+      "marca": "Audaces",
+      "ano": 2022,
+      "orcamento": 3500
+    },
+    {
+      "id": 5,
+      "nome": "Coleção 5",
+      "responsavel": "João",
+      "estacao": "Inverno",
+      "marca": "Audaces",
+      "ano": 2026,
+      "orcamento": 3000
+    },
+    {
+      "id": 6,
+      "nome": "Colecao 6",
+      "responsavel": "João",
+      "estacao": "Inverno",
+      "marca": "Audaces",
+      "ano": 2022,
+      "orcamento": 2000
+    },
+    {
+      "id": 7,
+      "nome": "Colecao 7",
+      "responsavel": "João",
+      "estacao": "Verão",
+      "marca": "Audaces",
+      "ano": 2024,
+      "orcamento": 4000
+    },
+    {
+      "id": 8,
+      "nome": "Colecao 8",
+      "responsavel": "João",
+      "estacao": "Outono",
+      "marca": "Audaces",
+      "ano": 2026,
+      "orcamento": 2000
+    }
+  ],
+  "modelo": [
+    {
+      "id": 1,
+      "nome": "Modelo 1",
+      "responsavel": "João",
+      "tipoModelo": "bolsa",
+      "colecao": "Coleção 1",
+      "bordado": "Não",
+      "estampa": "Não"
+    },
+    {
+      "id": 2,
+      "nome": "Modelo 2",
+      "responsavel": "João",
+      "tipoModelo": "bolsa",
+      "colecao": "Coleção 2",
+      "bordado": "Não",
+      "estampa": "Sim"
+    },
+    {
+      "id": 3,
+      "nome": "Modelo 3",
+      "responsavel": "João",
+      "tipoModelo": "bolsa",
+      "colecao": "Coleção 3",
+      "bordado": "Sim",
+      "estampa": "Sim"
+    },
+    {
+      "id": 4,
+      "nome": "Modelo 4",
+      "responsavel": "João",
+      "tipoModelo": "saia",
+      "colecao": "Coleção 4",
+      "bordado": "Não",
+      "estampa": "Não"
+    },
+    {
+      "id": 5,
+      "nome": "Modelo 5",
+      "responsavel": "João",
+      "tipoModelo": "bolsa",
+      "colecao": "Coleção 5",
+      "bordado": "Não",
+      "estampa": "Sim"
+    },
+    {
+      "id": 6,
+      "nome": "Modelo 6",
+      "responsavel": "João",
+      "tipoModelo": "bolsa",
+      "colecao": "Coleção 3",
+      "bordado": "Não",
+      "estampa": "Sim"
+    }
+  ]
+}
