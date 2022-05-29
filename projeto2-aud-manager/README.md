@@ -23,6 +23,17 @@ A aplicação contempla os seguintes requisitos:
 9. Uma tela de Cadastro de Modelos, contendo um formulário com os campos nome, responsável, tipo, coleção relacionada e dois “radio group” para verificar se o modelo possui bordado e se possui estampa. Ao clicar no botão salvar, chamar evento de onSubmit e cadastrar unidade via POST na rota /modelos do json-server, o botão “Cancelar” fará com o que o usuário seja enviado para Listagem de Modelos. Todos os campos do formulário são obrigatórios.
 
 10. Uma tela de Edição de Modelos, contendo um formulário com os mesmos campos presentes no Cadastro de Modelos. Essa tela precisa receber um parâmetro na rota para identificar que modelo o usuário deseja editar, mostrar no formulário os dados do modelo ao carregar as informações sobre ele. Ao clicar no botão salvar, chamar evento de onSubmit e atualizar a unidade via PUT na rota /modelos/:id do json-server, o botão “Cancelar” fará com o que o usuário seja enviado para Listagem de Modelos, além disso um botão Excluir deverá aparecer na tela e o clique será chamado o método DELETE na rota /modelos/:id para remover o modelo, ao fim da exclusão retornar o usuário para “Listagem de Modelos”.
+
+## Funcionalidades adicionais da Aplicação
+
+Para além dos requisitos pré-estabelecidos, foram incluídos na aplicação as seguintes funcionalidades:
+
+1. Proteção de rotas, por meio do CanActivate/CanLoad para o módulo privado.
+
+2. Avisos de formulário inválido para as telas de Loging, Esqueci a senha, Cadastro/Edição de Coleção e Cadastro/Edição de Modelo.
+
+3. Mensagem de alerta para alteração ou criação de Coleção ou Modelo, informando o nome da Coleção ou Modelo. Para Modelos tem-se mensagem de alerta também para a exclusão.
+
  
 ## CAPTURA DE TELA DO PROJETO
 
