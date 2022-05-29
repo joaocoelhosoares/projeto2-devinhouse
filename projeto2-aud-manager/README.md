@@ -30,7 +30,7 @@ Para além dos requisitos pré-estabelecidos, foram incluídos na aplicação as
 
 1. Proteção de rotas, por meio do CanActivate/CanLoad para o módulo privado.
 
-2. Avisos de formulário inválido para as telas de Loging, Esqueci a senha, Cadastro/Edição de Coleção e Cadastro/Edição de Modelo.
+2. Avisos de formulário inválido para as telas de Login, Esqueci a senha, Cadastro/Edição de Coleção e Cadastro/Edição de Modelo.
 
 3. Mensagem de alerta para alteração ou criação de Coleção ou Modelo, informando o nome da Coleção ou Modelo. Para Modelos tem-se mensagem de alerta também para a exclusão.
 
