@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { PrivateRoutingModule } from './private-routing.module';
 import { DashboardComponent } from './_component/dashboard/dashboard.component';
 import { ContentComponent } from './_layout/content/content.component';
